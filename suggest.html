@@ -1,0 +1,116 @@
+<html>
+	<head>
+		<title>Pokémon Express</title>
+		<link rel = "stylesheet" type = "text/css" href = "style.css">
+	</head>
+<body>
+
+	<img src="pics/banner.jpg" class="bgheader">
+
+	<div class="header">
+		<img src="pics/logo.png" class="logo">
+		<h1 class="title">
+		Pokémon Express
+		</h1>
+
+		<h2 class="subtitle">
+			The Best Place for Up to Date Pokémon News
+		</h2>
+	</div>
+
+	<ul class = "navbar">
+		<li> <a href = "home.html" class = "navbar"> Home </a>
+		<li> <a href = "haxo.html" class = "navbar"> Haxorus </a>
+		<li> <a href = "lati.html" class = "navbar"> Latios </a>
+		<li> <a href = "meta.html" class = "navbar"> Metagross </a>
+		<li> <a href = "rotom.html" class = "navbar"> Rotom-W </a>
+		<li> <a href = "suggest.html" class = "navbar"> Future Suggestions </a>
+	</ul>
+
+	<h1 class="formtitle">Please suggest any future Pokémon of the Week Analyses </h1>
+
+	<hr>
+
+	<form method="post" enctype="text/plain" action="mailto:bansp4188@googleapps.wrdsb.ca">
+		<fieldset>
+			<legend>Personal Information</legend>
+			<p>
+				<label>Name:</label>
+					<input type="text" id="name" placeholder="Your Name...">
+			</p>
+			<p>
+				<label>Email:</label>
+					<input type="text" id="email" placeholder="Your Email...">
+			</p>
+		</fieldset>
+
+		<p>
+			<label>Which Generation of Pokémon do you reccomend? <br> <br>
+				<label> <input type="radio" name="Gen" value="Gen I">One		</label>
+				<label> <input type="radio" name="Gen" value="Gen II">Two		</label>
+				<label> <input type="radio" name="Gen" value="Gen III">Three	</label>
+				<label> <input type="radio" name="Gen" value="Gen IV">Four		</label>
+				<label> <input type="radio" name="Gen" value="Gen V">Five		</label>
+				<label> <input type="radio" name="Gen" value="Gen VI">Six		</label>
+				<label> <input type="radio" name="Gen" value="Gen VII">Seven	</label>
+		</p>
+		<br>
+		<p>
+			<label>Which Type of Pokémon do you reccomend? <br>
+				<input type="text" size="25" name="type" placeholder="Type..." list="type" class="dlist">
+					<datalist id="type">
+						<select name="type">
+							<option value="Normal">Normal
+							<option value="Fighting">Fighting
+							<option value="Flying">Flying
+							<option value="Poison">Poison
+							<option value="Ground">Ground
+							<option value="Rock">Rock
+							<option value="Bug">Bug
+							<option value="Ghost">Ghost
+							<option value="Fire">Fire
+							<option value="Water">Water
+							<option value="Grass">Grass
+							<option value="Electric">Electric
+							<option value="Psychic">Psychic
+							<option value="Ice">Ice
+							<option value="Dragon">Dragon
+							<option value="Dark">Dark
+							<option value="Fairy">Fairy
+							<option value="Steel">Steel
+						</select>
+					</datalist>
+		</p>
+		<br>
+		<p>
+			<label>How Would You Rate my Analysis Quality?<br>
+				<input type="range" name="rate" min="1" max="5" step="1" list="numbers" class="rate">
+					<datalist id="numbers">
+						<option>1
+						<option>2
+						<option>3
+						<option>4
+						<option>5
+		</p>
+
+		<p>
+			<label>Additional Comments:<br>
+				<textarea name="comment" rows="9" cols="44" wrap></textarea>
+		</p>
+
+		<p>
+			<input type="reset" value="Clear Inputs" class="button">
+			<input type="submit" value="Submit the Form" class="button">
+		</p>
+	</form>
+
+<div class="footer">
+	<address>
+		Created by - Prateek Bansal<br>
+		on Friday May 12 2017<br>
+		All content, unless otherwise stated, is the property of Prateek Bansal
+	</address>
+</div>
+
+</body>
+</html>
